@@ -118,8 +118,50 @@
   background: white;
   padding: 10px 30px;
   text-decoration: none;
-  color: 111;
+  color: #83C7AB;
   margin-top: 10px;
   text-transform: uppercase;
   letter-spacing: 2px;
+  transition: 0.2s;
+}
+
+.text a:hover {
+  letter-spacing: 6px;
+}
+
+.social {
+  position: absolute;
+  bottom: 20px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social li{
+  list-style: none;
+}
+
+.social li a {
+  display: inline-block;
+  filter: invert(-1);
+  margin-right: 20px;
+  transform: scale(0.5);
+  transition: 0.5s;
+}
+
+.social li a:hover {
+  transform: scale(0.5) translateY(-15px);
+}
+
+@media(max-width: 740px) {
+  .showcase, .showcase header {
+    padding; 40px;  
+  }
+  .text h2 {
+    font-size: 3em;
+  }
+  .text h3 {
+    font-size: 2em;
+  }
 }
