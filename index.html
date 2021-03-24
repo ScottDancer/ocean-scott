@@ -10,7 +10,7 @@
   <body>
     <section class="showcase">
       <header>
-        <h2 class="logo"><img src="scott.png" alt="facebook-icon"></li></h2>
+        <h2 class="logo"><img src="brownlogo.png" alt="facebook-icon"></li></h2>
         <div class="toggle"></div>
       </header>
 
@@ -25,7 +25,7 @@
         Ideas are all abound and always being explored in ways that push
         boundaries and nurture new material
       </p>
-      <a href="#">Sail Away with Me</a>
+      <a href="#">Create with Me</a>
     </div>
 
     <ul class="social">
@@ -51,5 +51,14 @@
       </ul>
     </div>
 
+    <script>
+      const menuToggle = document.querySelector('.toggle')
+      const showcase = document.querySelector('.showcase')
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active')
+        showcase.classList.toggle('active')
+      })
+    </script>
   </body>
 </html>
